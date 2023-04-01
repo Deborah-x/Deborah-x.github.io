@@ -1,37 +1,55 @@
-<!-- <p> Hello!</p>
-<p> My name is Deborah. Welcome to my personal homepage.</p>
- -->
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>我的博客</title>
-	<link rel="stylesheet" href="style.css">
+<!-- 	<link rel="stylesheet" href="style.css"> -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#">首页</a></li>
-				<li><a href="#">关于我</a></li>
-				<li><a href="#">文章</a></li>
-				<li><a href="#">联系我</a></li>
-			</ul>
-		</nav>
-		<h1>我的博客</h1>
-	</header>
+	 <header>
+      <h1>欢迎来到我的博客</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">关于我</a></li>
+          <li><a href="#posts">文章</a></li>
+          <li><a href="#contact">联系我</a></li>
+        </ul>
+      </nav>
+    </header>
 	
 	<main>
-		<article>
-			<header>
-				<h2>文章标题</h2>
-				<p>发布日期：2023-04-01</p>
-			</header>
-			<p>文章内容</p>
-		</article>
-	</main>
+      <section id="about">
+        <h2>关于我</h2>
+        <img src="https://via.placeholder.com/150" alt="我的照片">
+        <p>这里是关于我的一些介绍。</p>
+      </section>
+
+      <section id="posts">
+        <h2>文章</h2>
+        <ul>
+          <li><a href="#">文章标题 1</a></li>
+          <li><a href="#">文章标题 2</a></li>
+          <li><a href="#">文章标题 3</a></li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>联系我</h2>
+        <form action="#" method="post">
+          <label for="name">姓名：</label><br>
+          <input type="text" id="name" name="name"><br>
+
+          <label for="email">邮箱：</label><br>
+          <input type="email" id="email" name="email"><br>
+
+          <label for="message">留言：</label><br>
+          <textarea id="message" name="message"></textarea><br>
+
+          <input type="submit" value="提交">
+        </form>
+      </section>
+    </main>
 	
 	<footer>
 		<p>版权所有 © 2023 我的博客</p>
